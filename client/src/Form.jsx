@@ -12,6 +12,8 @@ function Form(props) {
   const handleSubmit = (e) => {
     e.preventDefault()
     props.getTemp(currentCity)
+    props.getTempHi(currentCity)
+    props.getTempLow(currentCity)
     }
 
   return (
